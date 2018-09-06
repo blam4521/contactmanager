@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   // Destructing so you don't have to write props prefix.
@@ -30,7 +31,7 @@ const Header = props => {
 
 // Default properties in case nothing is passed in from parent.
 Header.defaultProps = {
-  branding: "my App"
+  branding: "My App"
 };
 
 // Tell the user what args. to input.
