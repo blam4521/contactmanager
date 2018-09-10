@@ -18,9 +18,22 @@ const Header = props => {
         <div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <Link to="/" className="nav-link">
+                <i className="fas fa-home" />
                 Home
-              </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact/add" className="nav-link">
+                <i className="fas fa-plus" />
+                Add
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                <i className="fas fa-question" />
+                About
+              </Link>
             </li>
           </ul>
         </div>
