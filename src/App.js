@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <Provider>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div className="App">
             <Header branding="Contact Manager" />
 
@@ -26,7 +26,7 @@ class App extends Component {
                 <Route exact path="/" component={Contacts} />
                 <Route exact path="/contact/add" component={AddContact} />
                 <Route excat path="/contact/edit/:id" component={EditContact} />
-                <Route exact path="/about/:id" component={About} />
+                <Route exact path="/about" component={About} />
                 <Route component={NotFound} />
                 <Route component={Test} />
               </Switch>
